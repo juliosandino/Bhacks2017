@@ -50,3 +50,13 @@ nav.navbar {
 .nav.navbar-nav.navbar-right li a:hover::after {
     width: 100%;
 }
+
+footer {
+	background-color: #ddd;
+	height: 100px;
+	width: 100%;
+	margin-top: 40px;
+	padding-top: 10px;
+	font-size: 150%;
+	text-align: center;
+}
