@@ -34,13 +34,15 @@ def home(request):
                                 stance = "Climate Change Denier"
 
                             url = congress_obj.url
+                            img_url = congress_obj.img_url
 
                             return render(request,'districts.html', {
                             'number': "You're in Congressional District " + str(obj.congressional_district),
                             'congressman': congress_obj.name,
                             'party': party,
                             'stance': stance,
-                            'url': url })
+                            'url': url,
+                            'img_url': img_url })
 
     else:
         form = zip_number()
@@ -79,6 +81,8 @@ def results(request, id):
 
     url = congressman.url
     img_url = congressman.img_url
+
+    print img_url
 
     return render(request, 'districts.html', {'congressman': congressman,
         'stance': stance,
