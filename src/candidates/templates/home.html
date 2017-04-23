@@ -1,13 +1,21 @@
 {% extends 'base.html' %}
+{% load staticfiles%}
+
+{% block style %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+
+
+{% endblock %}
 
 {% block title %}
 
-Climate Vote
+Home
 
 {% endblock %}
 
 {% block content %}
 
-<h1> Home </h1>
+<div class="banner"></div>
 
 {% endblock %}
