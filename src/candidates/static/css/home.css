@@ -47,6 +47,30 @@ img.banner {
     width: 100%;
 }
 
+h1.zip{
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+}
+
+input::placeholder {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 150%;
+	text-align: center;
+}
+
+input.zip-code {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 150%;
+	height: 1.6em;
+	text-align: center;
+}
+
+input.btn-default{
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-top: -7px;
+}
+
 p.home-text{
 	text-align: center;
 	margin: auto;

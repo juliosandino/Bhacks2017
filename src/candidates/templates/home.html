@@ -24,12 +24,12 @@ Home
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-lg-offset-2 col-md-offset-1">
 
-            <h1 align="center">Enter your zip here!</h1>
+            <h1 class="zip"> Enter your zip here! </h1>
 
             <div align="center" class="form-container">
                     <form class="form-horizontal" method="post">
                         {% csrf_token %}
-                        <input placeholder="zip code" type="number" name="zip_code" required id="id_zip_code" />
+                        <input placeholder="zip code" type="number" name="zip_code" required id="id_zip_code" class="zip-code"/>
                         <input type="submit" value="Submit" class="btn btn-default" />
                     </form>
             </div>
