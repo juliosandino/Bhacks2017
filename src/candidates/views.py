@@ -15,8 +15,30 @@ def home(request):
             for obj in District.objects.all():
                 if obj.zip_code == int(zip_c):
                     print "found"
-                    return render(request,'districts.html', {
-                        'number':"You're in Congressional District " + str(obj.congressional_district) })
+
+                    for congress_obj in CongressMan.objects.all():
+                        if obj.congressional_district == congress_obj.district:
+
+                            if (congress_obj.party == "D"):
+                                party = "Democrat"
+                            elif (congress_obj.party == "R"):
+                                party = "Republic"
+                            else:
+                                party = "Independent"
+
+                            if (congress_obj.stance == "F"):
+                                stance = "Supports Action Against Climate Change"
+                            else:
+                                stance = "Climate Change Denier"
+
+                            url = congress_obj.url
+
+                            return render(request,'districts.html', {
+                            'number': "You're in Congressional District " + str(obj.congressional_district),
+                            'congressman': congress_obj.name,
+                            'party': party,
+                            'stance': stance,
+                            'url': url })
 
     else:
         form = zip_number()
