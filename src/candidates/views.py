@@ -64,4 +64,23 @@ def contact(request):
 
 def results(request, id):
     congressman = get_object_or_404(CongressMan, district=id)
-    return render(request, 'specific_district.html', {'congressman': congressman})
+
+    if (congressman.party == "D"):
+       party = "Democrat"
+    elif (congressman.party == "R"):
+        party = "Republic"
+    else:
+        party = "Independent"
+
+    if (congressman.stance == "F"):
+        stance = "Supports Action Against Climate Change"
+    else:
+        stance = "Climate Change Denier"
+
+    url = congressman.url
+
+    return render(request, 'districts.html', {'congressman': congressman,
+        'stance': stance,
+        'url' : url,
+        'party' : party,
+        'number' : "You're in Congressional District " + str(congressman.district)})
