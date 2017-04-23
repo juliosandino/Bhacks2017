@@ -1,0 +1,31 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+{% block style %}
+{% endblock %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+
+
+<script src="https://use.fontawesome.com/023ea142c2.js"></script>
+    <title><i class="fa fa-globe" aria-hidden="true"></i></title>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Districts</li>
+        <li>Contacts</li>
+    </ul>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
