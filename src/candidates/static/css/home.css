@@ -24,3 +24,11 @@ nav.navbar {
 img.banner {
     width: 100%;
 }
+
+div.home-text{
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 150%;
+}
