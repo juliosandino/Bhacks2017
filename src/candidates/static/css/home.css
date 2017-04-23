@@ -1,5 +1,4 @@
 div.banner {
-    height: 500px;
     background-color: black;
     width: 100%;
     position: absolute;
@@ -16,5 +15,12 @@ nav.navbar {
     z-index: 10;
     position: absolute;
     width: 100%;
+}
+
+.nav.navbar-nav.navbar-right li a {
     color: white;
+}
+
+img.banner {
+    width: 100%;
 }
