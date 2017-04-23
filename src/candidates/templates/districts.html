@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block title %}
+
+Districts
+
+{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/districts.css' %}">
+
+{% endblock %}
+
+{% block content %}
+
+<h1 class="title"> {{number}} </h1>
+
+<table align="center" class="representative">
+  <tr>
+    <th><h2 class="name" align="center"> Current Representative: {{congressman}} </h2></th>
+  </tr>
+  <tr>
+    <td>{{party}}</td>
+  </tr>
+  <tr>
+  	<td>{{stance}}</td>
+  </tr>
+  <tr>
+  	<td><a href={{url}}>More Policy Information</a></td>
+  </tr>
+</table>
+
+{% endblock %}
