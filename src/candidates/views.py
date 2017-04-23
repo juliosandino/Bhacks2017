@@ -15,7 +15,8 @@ def home(request):
             for obj in District.objects.all():
                 if obj.zip_code == int(zip_c):
                     print "found"
-                    return render(request,'districts.html', {'number': obj.congressional_district})
+                    return render(request,'districts.html', {
+                        'number':"You're in Congressional District " + str(obj.congressional_district) })
 
     else:
         form = zip_number()
@@ -24,6 +25,9 @@ def home(request):
 
 def districts(request):
 	return render(request, 'districts.html', {'number': ''})
+
+def districts_zoomed(request):
+    return render(request, 'districts-zoomed.html', {'number': ''}) 
 
 def about(request):
 	return render(request, 'about.html', {})

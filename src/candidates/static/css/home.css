@@ -53,3 +53,9 @@ p.home-text{
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 150%;
 }
+
+div.form-container{
+    width: 100%;
+    margin: auto;
+    padding-bottom: 40px;
+}
