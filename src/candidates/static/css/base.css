@@ -5,4 +5,8 @@ h1 {
 a.link {
 	text-decoration: none;
 	color: white;
-}  
+}
+
+.navbar .navbar-brand a {
+    color: #000;
+}

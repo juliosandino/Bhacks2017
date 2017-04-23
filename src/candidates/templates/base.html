@@ -2,12 +2,12 @@
 
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 
 {% block style %}
 {% endblock %}
 
-<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
 
 <!-- Jquery CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -26,6 +26,8 @@
 <script src="https://use.fontawesome.com/023ea142c2.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
     <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
@@ -40,16 +42,16 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
-          <i class="fa fa-globe" aria-hidden="true"></i>
+          <a class="navbar-brand" href="#" style="font-size: 1.5em; font-family: "Helvetica Neue";">
+          <i class="fa fa-globe title_icon" aria-hidden="true" style="color:white"></i>
           Climate Vote</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a class = "link" href="{% url 'home' %}">Home</a></li>
-            <li><a class = "link" href="{% url 'about' %}">About</a></li>
-            <li><a class = "link" href="{% url 'districts' %}">Districts</a></li>
-            <li><a class = "link" href="{% url 'contact' %}">Contact</a></li>
+            <li class="cool-link"><a class = "link" href="{% url 'home' %}">HOME</a></li>
+            <li><a class = "link" href="{% url 'about' %}">ABOUT</a></li>
+            <li><a class = "link" href="{% url 'districts' %}">DISTRICTS</a></li>
+            <li><a class = "link" href="{% url 'contact' %}">CONTACT</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

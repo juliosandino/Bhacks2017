@@ -2,28 +2,52 @@ div.banner {
     background-color: black;
     width: 100%;
     display: inline-block;
+    margin-top: -10px;
 }
 
 nav.navbar {
+    padding-top: 10px;
     border-bottom: none;
-    box-shadow: none;
-    background-image: none;
     margin-bottom: 0px;
-    background-color: transparent;
+    box-shadow: none;
+    background-image: url("https://i.ytimg.com/vi/JquobII5VjA/maxresdefault.jpg");;
     width: 100%;
     display: inline-block;
+
 }
 
 .nav.navbar-nav.navbar-right li a {
     color: white;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 1.5em;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+    color: white;
+}
+
+.nav.navbar-nav.navbar-right li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: white;
+    margin-top: 3px; 
+    transition: width .3s;
+}
+
+.nav.navbar-nav.navbar-right li a:hover::after {
+    width: 100%;
 }
 
 img.banner {
     width: 100%;
 }
 
-div.home-text{
-	width: 50%;
+p.home-text{
 	text-align: center;
 	margin: auto;
 	font-family: 'Source Sans Pro', sans-serif;
