@@ -48,6 +48,9 @@ def home(request):
 def districts(request):
 	return render(request, 'districts.html', {'number': ''})
 
+def map(request):
+    return render(request, 'map.html',{})
+
 def zoomed(request):
     return render(request, 'zoomed.html', {'number': ''}) 
 

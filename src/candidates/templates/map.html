@@ -14,15 +14,25 @@ Districts
 
 {% block content %}
 
+
+
 <h1 class="title"> {{number}} </h1>
 
-<h2 class="name" align="center"> {{congressman}} </h2>
+<table align="center" class="representative">
+  <tr>
+    <th><h2 class="name" align="center"> Current Representative: {{congressman}} </h2></th>
+  </tr>
+  <tr>
+    <td>{{party}}</td>
+  </tr>
+  <tr>
+  	<td>{{stance}}</td>
+  </tr>
+  <tr>
+  	<td><a href={{url}}>More Policy Information</a></td>
+  </tr>
+</table>
 
-<h3 class="party" align="center"> {{party}} </h3>
-
-<h3 class="stance" align="center"> {{stance}} </h3>
-
-<h3 class="url" align="center"> <a href={{url}}>More Policy Information</a></h3>
 
 <p style="text-align:center"><img src="http://www.legislature.ca.gov/common/images/california_map_main112712.gif" width="794" height="900" border="0" alt="California Assembly Districts Map" usemap="#california_map_main111612_Map">
 <map name="california_map_main111612_Map">
