@@ -1,0 +1,1 @@
+web: gunicorn climatevote.wsgi --log-file -
