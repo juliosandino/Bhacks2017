@@ -8,6 +8,7 @@ __pycache__/
 
 #databse
 db.sqlite3
+.DS_Store
 
 # Distribution / packaging
 .Python
