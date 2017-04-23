@@ -11,3 +11,6 @@ class District(models.Model):
 
     def __str__(self):
         return self.zip_code
+
+class CongressMan(model.Model):
+    
