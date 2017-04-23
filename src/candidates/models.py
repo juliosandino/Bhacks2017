@@ -15,11 +15,12 @@ class District(models.Model):
 class CongressMan(models.Model):
     name = models.CharField(max_length=140)
     stance = models.CharField(max_length=1)
+    district = models.IntegerField()
     party = models.CharField(max_length=15)
     incumbent = models.CharField(max_length=3)
     url = models.CharField(max_length=200)
     img_url = models.CharField(max_length=400)
 
     def __str__(self):
-        return name
+        return self.name
 
