@@ -5,3 +5,16 @@ div.banner {
     position: absolute;
     z-index: -1;
 }
+
+nav.navbar {
+    border-bottom: none;
+    box-shadow: none;
+    background-image: none;
+    margin-bottom: 0px;
+    background-color: transparent;
+    margin-bottom: -70px;
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    color: white;
+}

@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load staticfiles %}
 
 {% block title %}
 
@@ -6,12 +7,23 @@ About
 
 {% endblock %}
 
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+
+{% endblock %}
+
 {% block content %}
 
 <h1> About </h1>
 
-<div class="about text">
-<embed src="about.txt">
+<div class="about-text">
+	<p>Inspired by Bill Nye's new Netflix show "Bill Nye Saves the World"</p>
+
+	<p>We hope to give voters who are concerned with climate change an easier way of finding out which Californian Representatives are climate change supporters. By presenting infomation about candidates' stances, voters can be more informed about their decisions. </p>
+
+	<p>By: Benson Gao, Adam Kabbara, Julio Sandino</p>
+
+	<p>At BeachHacks 2017</p>
 </div>
 
 {% endblock %}
