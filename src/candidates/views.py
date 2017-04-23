@@ -4,6 +4,8 @@ from django.shortcuts import redirect
 
 from forms import zip_number
 from models import District, CongressMan
+from django.views import generic
+from django.shortcuts import get_object_or_404
 
 def home(request):
     if request.method == 'POST':
@@ -59,3 +61,7 @@ def about(request):
 
 def contact(request):
 	return render(request, 'contact.html', {})
+
+def results(request, id):
+    congressman = get_object_or_404(CongressMan, district=id)
+    return render(request, 'specific_district.html', {'congressman': congressman})

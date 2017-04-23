@@ -8,4 +8,5 @@ urlpatterns = [
     url(r'^districts', views.districts, name='districts'),
     url(r'^map', views.map, name='map'),
     url(r'^zoomed', views.zoomed, name='zoomed'),
+    url(r'^(?P<id>[0-9]+)/$', views.results, name='results'),
 ]

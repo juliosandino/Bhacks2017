@@ -9,7 +9,7 @@ class DistrictAdmin(admin.ModelAdmin):
     list_display = ["__str__", "congressional_district"]
 
 class CongressManAdmin(admin.ModelAdmin):
-    list_display = ["__str__", "name", "district", "party"]
+    list_display = ["__str__", "id", "district", "party"]
 
 admin.site.register(District, DistrictAdmin)
 admin.site.register(CongressMan, CongressManAdmin)
