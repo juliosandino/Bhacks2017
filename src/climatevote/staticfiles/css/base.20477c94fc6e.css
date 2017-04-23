@@ -1,0 +1,62 @@
+h1 {
+    font-family: Arial;
+}
+
+nav.navbar {
+    padding-top: 10px;
+    border-bottom: none;
+    margin-bottom: 0px;
+    box-shadow: none;
+    background-image: url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2016/08/black-background-30.jpg");
+    width: 100%;
+    display: inline-block;
+
+}
+
+.navbar-default .navbar-header {
+    color: white !important;
+}
+
+.nav.navbar-nav.navbar-right li a {
+    color: white;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav.navbar-nav.navbar-right li:hover {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav.navbar-nav.navbar-right li a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nav.navbar-nav.navbar-right li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: white;
+    margin-top: 3px; 
+    transition: width .3s;
+}
+
+.nav.navbar-nav.navbar-right li a:hover::after {
+    width: 100%;
+}
+
+footer {
+	background-color: #ddd;
+	height: 100px;
+	width: 100%;
+	margin-top: 40px;
+	padding-top: 10px;
+	font-size: 150%;
+	text-align: center;
+}
