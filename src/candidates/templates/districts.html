@@ -15,20 +15,11 @@ Districts
 {% block content %}
 
 <h1 class="title"> {{number}} </h1>
+<h2 class="name" align="center"> Current Representative: {{congressman}} </h2>
+<img style="text-align: center; margin: 50px" src={{img_url}} alt={{congressman}}>
+<p class="information" align="center"><p>{{party}}</p>
+<p>{{stance}}</p>
+<a href={{url}}>More Policy Information</a></p>
 
-<table align="center" class="representative">
-  <tr>
-    <th><h2 class="name" align="center"> Current Representative: {{congressman}} </h2></th>
-  </tr>
-  <tr>
-    <td>{{party}}</td>
-  </tr>
-  <tr>
-  	<td>{{stance}}</td>
-  </tr>
-  <tr>
-  	<td><a href={{url}}>More Policy Information</a></td>
-  </tr>
-</table>
 
 {% endblock %}

@@ -4,13 +4,13 @@ h1.title{
 	font-weight: bold;
 }
 
-table.representative{
-	border-collapse: collapse;
+p.information{
 	width: 35%;
 	text-align: center;
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
-table, th, td {
-	border: 1px solid black;
+img.picture{
+    display: block;
+    margin: 0 auto;
 }

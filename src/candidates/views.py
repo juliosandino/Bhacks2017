@@ -78,9 +78,11 @@ def results(request, id):
         stance = "Climate Change Denier"
 
     url = congressman.url
+    img_url = congressman.img_url
 
     return render(request, 'districts.html', {'congressman': congressman,
         'stance': stance,
         'url' : url,
         'party' : party,
-        'number' : "You're in Congressional District " + str(congressman.district)})
+        'number' : "You're in Congressional District " + str(congressman.district),
+        'img_url' : img_url})
