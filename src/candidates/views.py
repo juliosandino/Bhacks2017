@@ -26,6 +26,9 @@ def home(request):
 def districts(request):
 	return render(request, 'districts.html', {'number': ''})
 
+def districts-zoomed(request):
+    return render(request, 'districts-zoomed.html', {'number': ''}) 
+
 def about(request):
 	return render(request, 'about.html', {})
 
